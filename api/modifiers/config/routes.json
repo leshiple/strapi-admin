@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modifiers",
+      "handler": "modifiers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modifiers/count",
+      "handler": "modifiers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modifiers/:id",
+      "handler": "modifiers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/modifiers",
+      "handler": "modifiers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modifiers/:id",
+      "handler": "modifiers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modifiers/:id",
+      "handler": "modifiers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

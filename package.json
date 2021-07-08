@@ -1,0 +1,45 @@
+{
+  "name": "cms-resto",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "develop-admin": "strapi develop --watch-admin",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "ajv": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "file-type": "^16.2.0",
+    "fs-extra": "^9.1.0",
+    "knex": "<0.20.0",
+    "node-fetch": "^2.6.1",
+    "nunjucks": "^3.2.3",
+    "slugify": "^1.4.6",
+    "sqlite3": "latest",
+    "strapi": "3.4.6",
+    "strapi-admin": "3.4.6",
+    "strapi-connector-bookshelf": "3.4.6",
+    "strapi-plugin-content-manager": "3.4.6",
+    "strapi-plugin-content-type-builder": "3.4.6",
+    "strapi-plugin-email": "3.4.6",
+    "strapi-plugin-upload": "3.4.6",
+    "strapi-plugin-users-permissions": "3.4.6",
+    "strapi-utils": "3.4.6"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "3fb4d097-7f0b-43d8-b605-4d5b3a9f86c6"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

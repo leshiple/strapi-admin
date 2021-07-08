@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modifiers",
+  "info": {
+    "name": "modifiers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "energyFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "fiberFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "fatFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "carbohydrateFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "weight": {
+      "type": "float",
+      "default": 0
+    },
+    "price": {
+      "type": "integer",
+      "default": 0
+    },
+    "minAmount": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "maxAmount": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "iikoId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "fiberAmount": {
+      "type": "float"
+    },
+    "energyAmount": {
+      "type": "float"
+    },
+    "fatAmount": {
+      "type": "float"
+    },
+    "carbohydrateAmount": {
+      "type": "float"
+    },
+    "slug": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "unique": false
+    }
+  }
+}

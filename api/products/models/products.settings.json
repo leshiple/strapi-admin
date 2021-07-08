@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "iikoId": {
+      "type": "string",
+      "private": true,
+      "required": true,
+      "unique": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": true
+    },
+    "composition": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "energyAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "carbohydrateAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "fatAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "fiberAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "energyFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "carbohydrateFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "fatFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "fiberFullAmount": {
+      "type": "float",
+      "default": 0
+    },
+    "weight": {
+      "type": "float",
+      "default": 0
+    },
+    "measureUnit": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "category": {
+      "via": "products",
+      "model": "categories"
+    },
+    "groupModifiers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.group-modifiers"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "plugin.name": "iiko",
+  "error.duplicate": "дубликат",
+  "error.noProducts": "не содержит товары"
+}

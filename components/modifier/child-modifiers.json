@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_modifier_child_modifiers",
+  "info": {
+    "name": "childModifiers",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "maxAmount": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "minAmount": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "modifier": {
+      "model": "modifiers"
+    }
+  }
+}
